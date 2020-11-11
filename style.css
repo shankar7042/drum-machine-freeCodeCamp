@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: rgb(134, 82, 172);
+}
+
+#drum-machine {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  background-color: gray;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.container .main {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  margin-right: 15px;
+}
+
+.container .meta {
+  width: 30vw;
+}
+
+.container .meta .id {
+  background-color: rgb(160, 152, 152);
+  padding: 5px 10px;
+  text-align: center;
+}
+
+.container .meta div {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.container .meta div h5 {
+  font-weight: bold;
+  font-size: 1em;
+}
+
+.container .meta div input {
+  width: 100%;
+}
+
+.container .meta div button {
+  padding: 5px 10px;
+  width: 50%;
+  text-transform: capitalize;
+  background-color: orange;
+}
+
+.container .drum-pad {
+  background-color: rgb(219, 210, 210);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  padding: 20px;
+  user-select: none;
+  cursor: pointer;
+  font-size: 1.5em;
+  border: 2px solid black;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px rgb(44, 43, 43);
+}
+
+.drum-pad.active {
+  background-color: orange;
+}
